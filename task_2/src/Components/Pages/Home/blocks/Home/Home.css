@@ -1,0 +1,58 @@
+.home {
+    height: 668px;
+    background: #1C1E53;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-left {
+    margin-right: 90px;
+    width: 500px;
+}
+
+.home h1 {
+    color: white;
+}
+
+.home p {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    opacity: 0.7;
+    width: 450px;
+}
+
+.left-button-block {
+    margin-top: 48px;
+}
+
+.left-button-block input {
+    font-family: 'Manrope';
+    font-style: normal;
+    color: black;
+    background: #FCD980;
+    border: none;
+    border-radius: 41px;
+    padding: 16px 56px;
+    font-size: 18px;
+
+}
+
+.left-button-block input:hover {
+    color: white;
+    background: #282938;
+    outline: none;
+}
+
+.left-button-block a {
+    color: white;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.left-button-block a:hover {
+    text-decoration: underline;
+}

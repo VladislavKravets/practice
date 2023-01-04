@@ -1,0 +1,131 @@
+.our-work {
+    width: 100%;
+    height: 984px;
+    display: flex;
+    justify-content: center;
+}
+
+.our-work a:hover {
+    text-decoration: underline;
+}
+
+.our-work-block {
+    margin-top: 128px;
+    width: 1280px;
+    height: 728px;
+}
+
+.our-work-head {
+    margin-bottom: 64px;
+    display: flex;
+}
+
+.our-work-head h3 {
+    padding-right: 750px;
+    font-size: 48px;
+}
+
+.our-work-head a {
+    margin-top: 21px;
+    font-size: 16px;
+}
+
+.our-work-content-left {
+    display: block;
+    position: relative;
+    background-image: url('res/first_proj.png');
+    width: 843px;
+    height: 600px;
+    overflow: hidden;
+    color: white;
+}
+
+.block_text {
+    padding-left: 48px;
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.our-work-content-left h6 {
+    width: 300px;
+    margin-top: 250px;
+    color: white;
+}
+
+.our-work-content-left p {
+    margin-top: 16px;
+    width: 280px;
+    margin-bottom: 40px;
+    opacity: 0;
+    color: white;
+}
+
+.our-work-content-left a {
+    color: #FCD980;
+    opacity: 0;
+}
+
+.our-work-content-left:hover h3,
+.our-work-content-left:hover p,
+.our-work-content-left:hover a,
+.our-work-content-left:hover .block_text {
+    opacity: 1;
+}
+
+.our-work-content {
+    display: flex;
+}
+
+.our-work-content-right {
+    margin-left: 23px;
+}
+
+.our-work-content-right div {
+    display: block;
+    width: 405px;
+    height: 284px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.block_text_right {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.our-work-content-right div:hover .block_text_right {
+    opacity: 1;
+}
+
+.second-project {
+    background-image: url('res/second_proj.png');
+}
+
+.third-project {
+    margin-top: 32px;
+    background-image: url('res/third_proj.png');
+}
+
+.our-work-content-right h6 {
+    margin-top: 139px;
+    margin-left: 56px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.our-work-content-right a {
+    margin-left: 56px;
+    color: #FCD980;
+}

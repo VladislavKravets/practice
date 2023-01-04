@@ -1,0 +1,27 @@
+.logo-section {
+    width: 1280px;
+    height: 84px;
+    margin: 96px auto;
+    text-align: left;
+    /* Выравниваем текст по центру ячейки */
+}
+
+.logo-section th:nth-child(n+2) {
+    padding: 0 30px;
+    opacity: 0.7;
+}
+
+.logo-section th h3 {
+    opacity: 1;
+}
+
+.logo-section th p {
+    font-size: 16px;
+    color: #282938;
+    opacity: 0.7;
+}
+
+.logo-section table {
+    margin: auto;
+    /* Выравниваем таблицу по центру окна  */
+}

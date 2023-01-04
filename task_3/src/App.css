@@ -1,0 +1,232 @@
+a{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #82AAE3;
+}
+
+body img:first-child{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+h1 {
+    line-height: 0;
+}
+
+.header h1{
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.header a,
+.footer a,
+.palette-header a{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+    cursor: pointer;
+    color: white;
+    fontSize: 24px;
+}
+
+.header a:hover, .footer a:hover, .palette-header a:hover {
+     background-size: 100% 2px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1280px;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;     /*Центрирование по вертикали */
+}
+
+.card {
+    width: 385px;
+    height: 250px;
+    background: white;
+    border-radius: 10px;
+    transition: transform .15s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1)
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 1em;
+    justify-content: center;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.card-flor{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: -5px;
+}
+
+.colors .color {
+    width: 72px;
+    height: 49px;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.palette {
+    position:fixed;
+    width: 100%;
+    height: calc(90%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 0;
+}
+
+.palette .color{
+    width: 20%;
+    height: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.palette button{
+    color:black;
+    width: 100px;
+    height: 20%;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    border: black 1px solid;
+    opacity: 0;
+    transition: all 1s ease;
+
+}
+
+.palette h1{
+    position: absolute;
+    bottom: 10px;
+    text-transform: uppercase;
+    right: 8px;
+    font-size: 12px;
+    color:black;
+}
+
+
+.palette .color:hover button{
+    opacity: 1;
+}
+
+
+.palette-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.palette-header a {
+    font-size: 20px;
+}
+
+.palette-header .drop-button {
+    width: 300px;
+}
+
+.palette-header button {
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.palette-header .button {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.palette-header .active-button {
+    background-color: black;
+    color: white;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    z-index:  100;
+    width:    100%;
+    height:   100%;
+    margin: auto;
+    opacity: 0;
+    animation: ani 2.5s backwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.overlay.active{
+    opacity: 1;
+    display:block;
+}
+
+.overlay.active h1{
+    font-size: 50px;
+    position:absolute;
+    text-align:center;
+    width:100%;
+    height: 100%;
+    top: 50%;
+}
+
+.overlay.active h1:nth-child(1){
+    top: 40%;
+}
+.overlay.active h1:nth-child(2){
+    top: 50%;
+}

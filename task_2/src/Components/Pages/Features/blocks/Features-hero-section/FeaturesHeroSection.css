@@ -1,0 +1,41 @@
+.features-hero-section {
+    width: 100%;
+    height: 757px;
+    background: #1C1E53;
+    display: flex;
+    justify-content: center;
+}
+
+.features-hero-section div {
+    margin-top: 128px;
+}
+
+.features-hero-section div:first-child {
+    width: 562px;
+    height: 332px;
+    padding-top: 39px;
+    padding-right: 60px;
+}
+
+.features-hero-section div:first-child h1 {
+    color: #FFFFFF;
+}
+
+.features-hero-section div:first-child p {
+    color: #FFFFFF;
+    margin-top: 32px;
+    opacity: 0.7;
+}
+
+.features-hero-section div:first-child input {
+    margin-top: 32px;
+    background: #FCD980;
+    border-radius: 41px;
+    padding: 16px 48px;
+    border: none;
+}
+
+.features-hero-section div:first-child input:hover {
+    background: #FDE4A6;
+    color: #1B1C2B;
+}

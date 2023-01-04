@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="">{Finsweet</a>
+        </div>
+        <div class="navbar-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="features.html">Features</a>
+            <a href="error.html">Pricing</a>
+            <a href="error.html">FAQ</a>
+            <a href="error.html">Blog</a>
+            <input type="button" value="Contact us">
+        </div>
+    </div>
+    <div class="features-hero-section">
+        <div>
+            <h1>All the features you need</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <input type="button" value="View pricing">
+        </div>
+        <div>
+            <img src="res/Feature%20Hero%20Illustration.png" alt="">
+        </div>
+    </div>
+    <div class="logo-section">
+        <table>
+            <th>
+                <h3>100.000+</h3>
+                <p>Figma Users</p>
+            </th>
+            <th>
+                <img src="res/Logo%201.png" alt="">
+            </th>
+            <th>
+                <img src="res/Logo%202.png" alt="">
+            </th>
+            <th>
+                <img src="res/Logo%203.png" alt="">
+            </th>
+            <th>
+                <img src="res/Logo%204.png" alt="">
+            </th>
+            <th>
+                <img src="res/Logo%205.png" alt="">
+            </th>
+        </table>
+    </div>
+    <div class="benefits">
+        <h2>The benefits of working with our team</h2>
+        <table>
+            <th>
+                <img src="res/card.png" alt="">
+                <h6>Customize with ease</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+            </th>
+            <th>
+                <img src="res/card2.png" alt="">
+                <h6>Perfectly Responsive</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+            </th>
+            <th>
+                <img src="res/card3.png" alt="">
+                <h6>Friendly Support</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+            </th>
+        </table>
+    </div>
+    <div class="FAQ">
+        <div>
+            <h3>Frequently asked question</h3>
+            <label for=""><a href="">Contact us for more info</a></label>
+        </div>
+        <div class = "FAQ-right">
+            <ul>
+                <li>
+                    <button class="accordion">
+                        <h6>01</h6>
+                        <h6>How much time does it take ?</h6>
+                        <img src="res/plus.png" alt="">
+                    </button>
+                    <div class="panel">
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <button class="accordion">
+                        <h6>02</h6>
+                        <h6>What is your class naming convention ?</h6>
+                        <img src="res/plus.png" alt="">
+                    </button>
+                    <div class="panel">
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <button class="accordion">
+                        <h6>03</h6>
+                        <h6>How do we communicate ?</h6>
+                        <img src="res/plus.png" alt="">
+                    </button>
+                    <div class="panel">
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <button class="accordion">
+                        <h6>04</h6>
+                        <h6>I have a bigger project. Can you handel it ?</h6>
+                        <img src="res/plus.png" alt="">
+                    </button>
+                    <div class="panel">
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <button class="accordion">
+                        <h6>05</h6>
+                        <h6>What is your class naming convention ?</h6>
+                        <img src="res/plus.png" alt="">
+                    </button>
+                    <div class="panel">
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+                    </div>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <div class="footer">
+        <div class="text-block">
+            <div>
+                <h2>
+                    {Finsweet
+                </h2>
+                <p>We are always open to discuss your project and improve your online presence.</p>
+            </div>
+            <div>
+                <h3>
+                    Lets Talk!
+                </h3>
+                <p>We are always open to discuss your project, improve your online presence and help with your UX/UI design
+                    challenges.</p>
+                <a href=""><img src="res/facebook.png" alt="facebook"></a>
+                <a href=""><img src="res/twiter.png" alt="twiter"></a>
+                <a href=""><img src="res/instagram.png" alt="instagram"></a>
+                <a href=""><img src="res/in.png" alt="in"></a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="info-block">
+                <div>
+                    <h3>Email me at</h3>
+                    <p>contact@website.com</p>
+                </div>
+                <div>
+                    <h3>Call us</h3>
+                    <p>0927 6277 28525</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-nav">
+        <div>
+            <p>Copyright 2022, Finsweet.com</p>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="features.html">Features</a>
+            <a href="error.html">Pricing</a>
+            <a href="error.html">FAQ</a>
+            <a href="error.html">Blog</a>
+        </div>
+    </div>
+</body></html>

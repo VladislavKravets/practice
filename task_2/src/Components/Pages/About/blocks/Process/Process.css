@@ -1,0 +1,35 @@
+.process {
+    width: 1280px;
+    height: 268px;
+    margin: 128px auto;
+}
+
+.process h2 {
+    text-align: center;
+}
+
+.process table {
+    margin-top: 50px;
+}
+
+.process th {
+    text-align: left;
+}
+
+.process th h6 {
+    margin-top: 32px;
+    color: #282938;
+}
+
+.process th p {
+    margin-top: 8px;
+    color: #282938;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.process th:nth-child(2),
+.process th:nth-child(3),
+.process th:nth-child(4) {
+    padding-left: 48px;
+}
